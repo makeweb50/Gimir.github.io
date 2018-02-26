@@ -1,0 +1,33 @@
+body {
+	background: url('back.jpeg') no-repeat center center fixed;
+	background-size: cover;
+
+}
+.container {
+	h1 {
+		text-align: center;
+		color: #213B46FF;
+		padding-top: 20px;
+	}
+
+	.block {
+		text-align: center;
+		width: 25%;
+		margin: 0 auto;
+		padding: 10px 10px;
+		transition: 0.2s;
+	}
+	.block:hover {
+		background-color: rgba(64, 160, 185, 0.2);
+	}
+	.block:hover a {
+		color: #FFFFFFFF;
+	}
+	.block > a {
+		text-decoration: none;
+		color:#3A8EA5FF;
+		font-weight: bold;
+		letter-spacing: 3px;
+	}
+
+}
