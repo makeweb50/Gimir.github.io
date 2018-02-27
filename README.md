@@ -1,2 +1,3 @@
 # Project 0
-Web Programming с Python и Javascript
+
+# Main page - gimir.github.io/project0-Gimir/
