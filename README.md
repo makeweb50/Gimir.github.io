@@ -1,3 +1,3 @@
 # Project 0
 
-# Main page - gimir.github.io/project0-Gimir/
+# Main page - https://gimir.github.io/project0-Gimir/
