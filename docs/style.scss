@@ -3,6 +3,11 @@ body {
 	background-size: cover;
 
 }
+
+.container:first-child {
+	margin-bottom: 300px;
+}
+
 .container {
 	h1 {
 		text-align: center;
@@ -30,4 +35,17 @@ body {
 		letter-spacing: 3px;
 	}
 
+}
+
+@media (max-width: 480px)
+{
+	.container:first-child {
+		margin-bottom: 170px;
+	}
+	.container > .block > a {
+		letter-spacing: 1px;
+	}
+	.container > .block {
+		width: 35%;
+	}
 }

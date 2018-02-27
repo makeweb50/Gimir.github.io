@@ -1,0 +1,41 @@
+.container-fluid:first-child {
+	background: url('images/forest-head.jpeg') no-repeat center -630px fixed;
+	padding: 20px 0 20px 0;
+}
+.container-fluid {
+	h1{
+		text-align: center;
+		color: rgba(255, 255, 255, 0.7);
+	}
+}
+img {
+	margin: 2px;
+	width: 100%;
+}
+.big-img {
+	height: 400px;
+}
+.pan-img {
+	height: 300px;
+}
+.small-img {
+	height: 198px;
+}
+.col-padding-left {
+	padding-right: 1px;
+}
+.col-padding-right {
+	padding-left: 1px;
+}
+
+@media (max-width: 400px) {
+	.big-img {
+		height: 200px;
+	}
+	.pan-img {
+		height: 150px;
+	}
+	.small-img {
+		height: 97px;
+	}
+}
