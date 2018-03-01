@@ -1,11 +1,18 @@
+.h1-view {
+	text-align: center;
+	color: rgba(255, 255, 255, 0.7);
+}
+
+body {
+	background-color: #14130EFF;
+}
 .container-fluid:first-child {
 	background: url('images/forest-head.jpeg') no-repeat center -630px fixed;
 	padding: 20px 0 20px 0;
 }
 .container-fluid {
 	h1{
-		text-align: center;
-		color: rgba(255, 255, 255, 0.7);
+		@extend .h1-view;
 	}
 }
 img {
@@ -15,8 +22,14 @@ img {
 .big-img {
 	height: 400px;
 }
-.pan-img {
+.pan {
+	@extend .h1-view;
 	height: 300px;
+	background: url('images/pan-bg.jpg') no-repeat center center fixed;
+	
+	h1 {
+		line-height: 300px;
+	}
 }
 .small-img {
 	height: 198px;
@@ -28,14 +41,25 @@ img {
 	padding-left: 1px;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
 	.big-img {
 		height: 200px;
 	}
-	.pan-img {
+	.pan {
 		height: 150px;
+		h1 {
+		line-height: 150px;
+		font-size: 30px;
+		}
 	}
 	.small-img {
 		height: 97px;
+	}
+}
+@media (max-width: 390px) {
+	.pan {
+		h1 {
+		font-size: 23px;
+		}
 	}
 }
