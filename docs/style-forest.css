@@ -2,9 +2,6 @@
   text-align: center;
   color: rgba(255, 255, 255, 0.7); }
 
-body {
-  background-color: #14130EFF; }
-
 .container-fluid:first-child {
   background: url("images/forest-head.jpeg") no-repeat center -630px fixed;
   padding: 20px 0 20px 0; }
@@ -26,10 +23,11 @@ img {
   height: 198px; }
 
 .col-padding-left {
-  padding-right: 1px; }
+  padding-left: 0;
+  padding-right: 3px; }
 
 .col-padding-right {
-  padding-left: 1px; }
+  padding-left: 3px; }
 
 @media (max-width: 500px) {
   .big-img {

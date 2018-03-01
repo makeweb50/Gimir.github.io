@@ -4,7 +4,6 @@
 }
 
 body {
-	background-color: #14130EFF;
 }
 .container-fluid:first-child {
 	background: url('images/forest-head.jpeg') no-repeat center -630px fixed;
@@ -35,10 +34,11 @@ img {
 	height: 198px;
 }
 .col-padding-left {
-	padding-right: 1px;
+	padding-left: 0;
+	padding-right: 3px;
 }
 .col-padding-right {
-	padding-left: 1px;
+	padding-left: 3px;
 }
 
 @media (max-width: 500px) {
