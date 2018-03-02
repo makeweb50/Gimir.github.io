@@ -2,20 +2,28 @@
 	text-align: center;
 	color: rgba(255, 255, 255, 0.7);
 }
-
-body {
+.container{
+	padding: 0;
 }
-.container-fluid:first-child {
+.row, .col, .col-4, .col-6, .col-8, .col-12 {
+	margin: 0;
+	padding: 0;
+}
+.magin-bottom {margin-bottom: 2px;}
+
+/* PREPARING  PREPARING  PREPARING  PREPARING */
+
+.container:first-child {
 	background: url('images/forest-head.jpeg') no-repeat center -630px fixed;
 	padding: 20px 0 20px 0;
 }
-.container-fluid {
+.container {
 	h1{
 		@extend .h1-view;
 	}
 }
 img {
-	margin: 2px;
+	padding-bottom: 2px;
 	width: 100%;
 }
 .big-img {
@@ -31,29 +39,32 @@ img {
 	}
 }
 .small-img {
-	height: 198px;
+	height: 200px;
 }
 .col-padding-left {
 	padding-left: 0;
-	padding-right: 3px;
+	padding-right: 1px;
 }
 .col-padding-right {
-	padding-left: 3px;
+	padding-left: 1px;
 }
+
+.pad-l {padding-left: 0;}
+.pad-r {padding-right: 0;}
 
 @media (max-width: 500px) {
 	.big-img {
-		height: 200px;
+		height: 150px;
 	}
 	.pan {
-		height: 150px;
+		height: 100px;
 		h1 {
-		line-height: 150px;
+		line-height: 100px;
 		font-size: 30px;
 		}
 	}
 	.small-img {
-		height: 97px;
+		height: 75px;
 	}
 }
 @media (max-width: 390px) {
