@@ -10,6 +10,10 @@
 	padding: 0;
 }
 .magin-bottom {margin-bottom: 2px;}
+img {
+	padding-bottom: 2px;
+	width: 100%;
+}
 
 /* PREPARING  PREPARING  PREPARING  PREPARING */
 
@@ -17,18 +21,12 @@
 	background: url('images/forest-head.jpeg') no-repeat center -630px fixed;
 	padding: 20px 0 20px 0;
 }
-.container {
-	h1{
-		@extend .h1-view;
-	}
-}
-img {
-	padding-bottom: 2px;
-	width: 100%;
-}
-.big-img {
-	height: 400px;
-}
+
+.container h1 {@extend .h1-view;}
+
+
+
+
 .pan {
 	@extend .h1-view;
 	height: 300px;
@@ -37,20 +35,41 @@ img {
 	h1 {
 		line-height: 300px;
 	}
+	.taiga {
+		transition: 0.2s;
+		@extend .h1-view;
+		opacity: 0;
+		letter-spacing: 10px;
+		position: absolute;
+	}
 }
-.small-img {
-	height: 200px;
+.pan:hover {
+	h1:first-child {
+		display: none;
+	}
+	.taiga {
+		opacity: 1;
+		color: white;
+		position: static;
+	}
 }
+
+
+.big-img { height: 400px; }
+
+.small-img { height: 200px; }
+
 .col-padding-left {
 	padding-left: 0;
 	padding-right: 1px;
 }
-.col-padding-right {
-	padding-left: 1px;
-}
+.col-padding-right { padding-left: 1px; }
 
-.pad-l {padding-left: 0;}
-.pad-r {padding-right: 0;}
+.pad-l { padding-left: 0; }
+.pad-r { padding-right: 0; }
+
+
+
 
 @media (max-width: 500px) {
 	.big-img {

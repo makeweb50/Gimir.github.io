@@ -1,4 +1,4 @@
-.h1-view, .container h1, .pan {
+.h1-view, .container h1, .pan, .pan .taiga {
   text-align: center;
   color: rgba(255, 255, 255, 0.7); }
 
@@ -12,23 +12,35 @@
 .magin-bottom {
   margin-bottom: 2px; }
 
-/* PREPARING  PREPARING  PREPARING  PREPARING */
-.container:first-child {
-  background: url("images/forest-head.jpeg") no-repeat center -630px fixed;
-  padding: 20px 0 20px 0; }
-
 img {
   padding-bottom: 2px;
   width: 100%; }
 
-.big-img {
-  height: 400px; }
+/* PREPARING  PREPARING  PREPARING  PREPARING */
+.container:first-child {
+  background: url("images/forest-head.jpeg") no-repeat center -630px fixed;
+  padding: 20px 0 20px 0; }
 
 .pan {
   height: 300px;
   background: url("images/pan-bg.jpg") no-repeat center center fixed; }
   .pan h1 {
     line-height: 300px; }
+  .pan .taiga {
+    transition: 0.2s;
+    opacity: 0;
+    letter-spacing: 10px;
+    position: absolute; }
+
+.pan:hover h1:first-child {
+  display: none; }
+.pan:hover .taiga {
+  opacity: 1;
+  color: white;
+  position: static; }
+
+.big-img {
+  height: 400px; }
 
 .small-img {
   height: 200px; }
