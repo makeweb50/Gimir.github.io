@@ -1,0 +1,248 @@
+.row, .col, .col-4, .col-5, .col-6, .col-7, .col-8, .col-12 {
+	margin: 0;
+	padding: 0;
+}
+.container {padding: 0;}
+.con-main {
+	margin-top: 5px;
+	border-radius: 10px;
+	box-shadow:
+   0 1px 4px rgba(0, 0, 0, .3),
+   -23px 0 20px -23px rgba(0, 0, 0, .8),
+   23px 0 20px -23px rgba(0, 0, 0, .8),
+   0 0 40px rgba(0, 0, 0, .1) inset;
+	-webkit-box-shadow:
+   0 1px 4px rgba(0, 0, 0, .3),
+   -23px 0 20px -23px rgba(0, 0, 0, .8),
+   23px 0 20px -23px rgba(0, 0, 0, .8),
+   0 0 40px rgba(0, 0, 0, .1) inset;
+}
+
+// ....PREPARING........PREPARING........PREPARING....//
+
+.head {
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	padding: 0;
+	position: relative;
+	height: 750px;
+	background: url('images/desert/desert-main.jpeg') no-repeat center center fixed;
+	background-size: cover;
+
+	h1 {
+		text-align: center;
+		padding-top: 250px;
+		color: rgba(255, 255, 255, 1);
+		letter-spacing: 10px;
+	}
+
+	.hid-head {
+		height: 100px;
+		position: absolute;
+		width: 100%;
+		bottom: 0;
+		transition: 0.3s;
+		text-align: center;
+		
+		a {
+			text-decoration: none;
+			color: rgba(255, 255, 255, 1);
+			transition: 0.4s;
+			opacity: 0;
+		}
+	}
+	.hid-head:hover {
+		background: linear-gradient(to top, rgba(1, 1, 1, 1), rgba(1, 1, 1, 0));
+		a {
+			opacity: 1;
+		}
+	}
+}
+.middle {
+	height: 120px;
+	padding-top: 20px;
+	text-align: center;
+	
+}
+.small, .small2, .long, .big, .big2 {
+	position: relative;
+	background-size: cover;
+	
+	h3 {text-align: center;}
+
+	.lay {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		transition: 0.3s;
+		h3 {
+		   	color: rgba(255, 255, 255, 1);
+		   	opacity: 0;
+		   	transition: 0.3s;
+		}
+	}
+}
+
+.long {
+	height: 700px;
+	background: url('images/desert/desert-long.jpeg') no-repeat center center;
+	h3 {line-height: 700px;}
+}
+.small {
+	height: 350px;
+	background: url('images/desert/desert-sm1.jpeg') no-repeat center center;
+	h3 {line-height: 350px;}
+}
+.small2 {
+	height: 350px;
+	background: url('images/desert/desert-sm2.jpeg') no-repeat center center;
+	h3 {line-height: 350px;}
+}
+.big {
+	height: 400px;
+	background: url('images/desert/desert-big1.jpeg') no-repeat center center;
+	h3 {line-height: 400px;}
+}
+.big2 {
+	height: 400px;
+	background: url('images/desert/desert-big2.jpeg') no-repeat center center;
+	h3 {line-height: 400px;}
+}
+
+.small:hover, .small2:hover, .long:hover, .big:hover, .big2:hover {
+	.lay {
+		background-color: rgba(1, 1, 1, 0.5);
+
+		h3 {opacity: 1;}
+	}	
+}
+
+.footer {
+
+	height: 100px;
+	
+	.row > .col-6:first-child {
+		padding-top: 30px;
+		h5, p {
+		text-align: left; 
+		padding-left: 20px;
+		}
+		p {font-size: 10px;}
+
+		h5 {letter-spacing: 3px;}
+	}
+
+	.row > .col-6:last-child, a {
+		text-align: center;
+		line-height: 100px;
+		color: black;
+		transition: 0.3s;
+		text-decoration: none;
+	}
+	.cs50 {
+		font-size: 30px;
+		font-weight: bold;
+	}
+	a:hover {
+		color: rgba(1, 1, 1, 0.5);
+	}
+}
+
+//....MEDIA........MEDIA........MEDIA....//
+
+@media (max-width: 770px) {
+	.small, .small2, .long, .big, .big2 {
+		h3 {font-size: 15px;}
+	}
+	.long {
+		height: 500px;
+		h3 {line-height: 500px;}
+	}
+	.small {
+		height: 250px;
+		h3 {line-height: 250px;}
+	}
+	.small2 {
+		height: 250px;
+		h3 {line-height: 250px;}
+	}
+	.big {
+		height: 300px;
+		h3 {line-height: 300px;}
+	}
+	.big2 {
+		height: 300px;
+		h3 {line-height: 300px;}
+	}
+	.footer {
+		.row > .col-6:first-child {
+			padding-top: 10px;
+			h5 {font-size: 15px;}
+		}
+	}
+}
+@media (max-width: 450px) {
+	.small, .small2, .long, .big, .big2 {
+		h3 {font-size: 10px;}
+	}
+	.long {
+		height: 400px;
+		h3 {line-height: 400px;}
+	}
+	.small {
+		height: 200px;
+		h3 {line-height: 200px;}
+	}
+	.small2 {
+		height: 200px;
+		h3 {line-height: 200px;}
+	}
+	.big {
+		height: 250px;
+		h3 {line-height: 250px;}
+	}
+	.big2 {
+		height: 250px;
+		h3 {line-height: 250px;}
+	}
+}
+@media (max-width: 390px) {
+	.small, .small2, .long, .big, .big2 {
+		h3 {font-size: 10px;}
+	}
+	.long {
+		height: 350px;
+		h3 {line-height: 350px;}
+	}
+	.small {
+		height: 175px;
+		h3 {line-height: 175px;}
+	}
+	.small2 {
+		height: 175px;
+		h3 {line-height: 175px;}
+	}
+	.big {
+		height: 200px;
+		h3 {line-height: 200px;}
+	}
+	.big2 {
+		height: 200px;
+		h3 {line-height: 200px;}
+	}
+	.footer {
+		.row > .col-6:first-child {
+			padding-top: 0;
+		}
+	}
+}
+@media (max-height: 670px) {
+	.head {
+		height: 665px;
+	}
+}
+@media (max-height: 500px) {
+	.head {
+		height: 470px;
+	}
+}
