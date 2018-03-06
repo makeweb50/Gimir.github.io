@@ -47,8 +47,7 @@
   text-align: center; }
 
 .small, .small2, .long, .big, .big2 {
-  position: relative;
-  background-size: cover; }
+  position: relative; }
   .small h3, .small2 h3, .long h3, .big h3, .big2 h3 {
     text-align: center; }
   .small .lay, .small2 .lay, .long .lay, .big .lay, .big2 .lay {
@@ -95,6 +94,9 @@
   background-color: rgba(1, 1, 1, 0.5); }
   .small:hover .lay h3, .small2:hover .lay h3, .long:hover .lay h3, .big:hover .lay h3, .big2:hover .lay h3 {
     opacity: 1; }
+
+.small, .small2, .long, .big, .big2 {
+  background-size: cover; }
 
 .footer {
   height: 100px; }
