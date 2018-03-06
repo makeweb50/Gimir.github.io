@@ -66,7 +66,6 @@
 }
 .small, .small2, .long, .big, .big2 {
 	position: relative;
-	background-size: cover;
 	
 	h3 {text-align: center;}
 
@@ -116,6 +115,7 @@
 		h3 {opacity: 1;}
 	}	
 }
+.small, .small2, .long, .big, .big2 { background-size: cover; }
 
 .footer {
 
