@@ -1,0 +1,170 @@
+
+$primary-color: #1C374D;
+.bordersh {
+	margin-top: 20px;
+	box-shadow:
+   0 1px 4px rgba(0, 0, 0, .3),
+   -23px 0 20px -23px rgba(0, 0, 0, .8),
+   23px 0 20px -23px rgba(0, 0, 0, .8),
+   0 0 40px rgba(0, 0, 0, .1) inset;
+	-webkit-box-shadow:
+   0 1px 4px rgba(0, 0, 0, .3),
+   -23px 0 20px -23px rgba(0, 0, 0, .8),
+   23px 0 20px -23px rgba(0, 0, 0, .8),
+   0 0 40px rgba(0, 0, 0, .1) inset;
+}
+.container {padding: 0;}
+.header {
+	position: relative; 
+	height: 600px;
+	background: url('images/mountain/mountain2.jpeg') no-repeat center center;
+	background-size: cover;
+
+	h1 {
+		line-height: 600px;
+		font-size: 50px;
+		text-align: center;
+		color: white;
+		font-family: 'Lobster', cursive;
+	}
+}
+
+.info {
+	width: 100%;
+	height: 100px;
+	//background: url(images/mountain/mountain1.jpeg) no-repeat center center;
+	background-size: cover;
+	text-align: center;
+	line-height: 100px;
+	font-size: 40px;
+
+	a {
+		text-decoration: none;
+		padding: 0 100px 0 100px;
+		color: $primary-color;
+		transition: 0.3s;
+	}
+	a:hover {
+		color: #42B7FF;
+	}
+}
+
+.lands {
+	position: relative;
+	height: 300px;
+	overflow: hidden;
+	background: url('images/mountain/back2.jpeg') no-repeat center center;
+	background-size: cover;
+
+	.top-half, .bot-half {
+		position: absolute;
+		height: 150px;
+		width: 100%;
+		transition: 0.3s;
+	}
+	.top-half {
+		left: 0;
+		top: 0;
+		background: url('images/mountain/mountain-ver-half1.jpeg') no-repeat center bottom;
+		background-size: cover;
+		z-index: +1;
+	}
+	.bot-half {
+		left: 0;
+		bottom: 0;
+		background: url('images/mountain/mountain-ver-half2.jpeg') no-repeat center top;
+		background-size: cover;
+	}
+	
+	h1 {
+		position: relative;
+		text-align: center;
+		line-height: 300px;
+		color: white;
+		letter-spacing: 8px;
+		opacity: 0;
+		transition: 0.4s;
+	}
+}
+
+.lands:hover {
+	.top-half { top: -150px; }
+	.bot-half { bottom: -150px; }
+	h1 { opacity: 1; }
+}
+
+.footer {
+	height: 500px;
+	position: relative;
+	overflow: hidden;
+	background: url('images/mountain/mountain-hor.jpeg') no-repeat center center;
+	background-size: cover;
+
+	.left-half-hor, .right-half-hor {
+		width: 50%;
+		height: 500px;
+		position: absolute;
+		top: 0;
+		transition: 0.3s;
+	}
+	.left-half-hor {
+		left: -50%;
+		background: url('images/mountain/mountain-hor-1.jpeg') no-repeat right center;
+		background-size: cover;
+	}
+	.right-half-hor {
+		right: -50%;
+		background: url('images/mountain/mountain-hor-2.jpeg') no-repeat left center;
+		background-size: cover;
+		padding-top: 150px;
+
+		.list {
+			color: $primary-color;
+			opacity: 0;
+			width: 100%;
+			text-align: left;
+			transition: 0.5s;
+
+			ul {
+				margin-top: 30px;
+				list-style: none;
+				font-size: 25px;
+
+				li {
+					margin-bottom: 20px;
+
+
+				}
+			}
+		}
+	}
+}
+.footer:hover {
+	.left-half-hor {
+		left: 0;
+	}
+	.right-half-hor {
+		right: 0;
+	}
+	.list {opacity: 1;}
+}
+
+
+@media (max-width: 775px) {
+	.info {a {padding: 0 50px 0 50px;}}
+	.list {
+		h4 {font-size: 15px;}
+		ul li {font-size: 15px;}
+	}
+}
+@media (max-width: 445px) {
+	.info {a {padding: 0 20px 0 20px;}}
+	.lands { h1 { font-size: 25px; }}
+}
+
+@media (max-width: 400px) {
+	.lands { h1 { font-size: 15px; }}
+}
+
+
+
