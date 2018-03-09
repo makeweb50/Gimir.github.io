@@ -118,7 +118,7 @@ $primary-color: #1C374D;
 		right: -50%;
 		background: url('images/mountain/mountain-hor-2.jpeg') no-repeat left center;
 		background-size: cover;
-		padding-top: 150px;
+		padding-top: 80px;
 
 		.list {
 			color: $primary-color;
@@ -126,6 +126,7 @@ $primary-color: #1C374D;
 			width: 100%;
 			text-align: left;
 			transition: 0.5s;
+			font-family: 'Special Elite', cursive;
 
 			ul {
 				margin-top: 30px;
@@ -151,6 +152,9 @@ $primary-color: #1C374D;
 	.list {opacity: 1;}
 }
 
+@media (max-width: 990px) {
+	.list {h4 {font-size: 20px;}}
+}
 
 @media (max-width: 775px) {
 	.info {a {padding: 0 50px 0 50px;}}

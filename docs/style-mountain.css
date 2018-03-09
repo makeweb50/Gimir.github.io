@@ -92,13 +92,14 @@
     right: -50%;
     background: url("images/mountain/mountain-hor-2.jpeg") no-repeat left center;
     background-size: cover;
-    padding-top: 150px; }
+    padding-top: 80px; }
     .footer .right-half-hor .list {
       color: #1C374D;
       opacity: 0;
       width: 100%;
       text-align: left;
-      transition: 0.5s; }
+      transition: 0.5s;
+      font-family: 'Special Elite', cursive; }
       .footer .right-half-hor .list ul {
         margin-top: 30px;
         list-style: none;
@@ -113,6 +114,9 @@
 .footer:hover .list {
   opacity: 1; }
 
+@media (max-width: 990px) {
+  .list h4 {
+    font-size: 20px; } }
 @media (max-width: 775px) {
   .info a {
     padding: 0 50px 0 50px; }
